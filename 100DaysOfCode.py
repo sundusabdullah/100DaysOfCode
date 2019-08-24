@@ -88,3 +88,21 @@ import random
 print(random.randrange(1,10))
 
 
+
+
+# First task
+
+x = 'apple'
+y = 'orange'
+z = 'limon'
+
+basket = x + y + z
+
+n = 2
+
+number_list = [5, 6, 5]
+
+result = [basket[sum(number_list[:i]):sum(number_list[:i+1])] for i in range(len(number_list))]
+
+
+print(result)
