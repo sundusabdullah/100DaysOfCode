@@ -40,3 +40,51 @@ print("python is " + x)
 x = "awesome"
 y = "python is "
 print(y + x)
+
+
+#Fourth Day
+
+
+x = 1
+y = 2.8
+z = 1j
+
+#use type() function to define the type of variable
+print(type(x)) #int
+print(type(y)) #float
+print(type(z)) #complex
+
+
+x = 1
+y = 2.8
+z = 1j
+
+# convert from int to float
+
+a = float(x)
+
+# convert from float to int
+
+b = int(y)
+
+# convert from int to complex
+
+c = complex(x)
+
+print(a)
+print(b)
+print(c)
+
+
+print(type(a))
+print(type(b))
+print(type(c))
+
+
+# To print random number
+
+import random
+
+print(random.randrange(1,10))
+
+
