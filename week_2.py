@@ -56,3 +56,25 @@ a = "Hello, World!"
 print(a[1]) # output = e
 print(a[2:5]) # output = llo
 
+# Eighth Day
+
+# strip() use to removes whitespace from the beginning or the end
+a = " Hello, World "
+print(a.strip())
+
+# len() method returns the length of a string.
+print("the length of a string is:", len(a))
+
+# lower() method returns the string in lower case.
+print(a.lower())
+
+# upper() method returns the string in upper case.
+print(a.upper())
+
+#  replace() method replaces a string with another string.
+print(a.replace('World','sundus'))
+
+# split() method splits the string into substrings
+print(a.split(","))
+
+
