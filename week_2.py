@@ -78,3 +78,25 @@ print(a.replace('World','sundus'))
 print(a.split(","))
 
 
+#Ninth Day
+
+age = 36
+#txt = "My name is sundus, I am " + age
+#print(txt) # Error in output because cannot combine strings and numbers.
+
+txt_2 = "My name is sundus, I am {}"
+# We can combine strings and numbers by using the format() method
+print(txt_2.format(age))
+
+quantity = 3
+itemno = 567
+price = 49.95
+
+myOrder = " I want {} pieses of item {} for {} dollars."
+print(myOrder.format(quantity, itemno, price))
+
+'''You can use index numbers {0} to be sure the arguments are placed in the
+￼correct placeholders'''
+
+myOrder_2 = " I want to pay {2} dollars for {0} pieses of item {1}."
+print(myOrder_2.format(quantity, itemno, price))
