@@ -147,3 +147,22 @@ print("banana" in x) #true
 print("oranges" in x) #false
 
 
+# Task_2
+
+text_2 = "Please, I want {} sandwishes and {} donutes"
+num_1 = 5
+num_2 = 7
+
+
+# use replace() function
+print(text_2.replace("I", "we"))
+
+# use format() function
+print(text_2.format(num_1, num_2))
+
+# use replace() function
+print(text_2.replace("a", "A"))
+
+# print text after performing all changes.
+print(text_2.replace("I", "we").format(num_1, num_2).replace("a", "A"))
+
