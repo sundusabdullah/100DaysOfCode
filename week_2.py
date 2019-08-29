@@ -122,3 +122,28 @@ print(x)
 
 print(x < y) # false
 print(x != y) #true
+
+# Eleventh Day
+
+# Logical Operators, output true or false
+
+z = 5
+print(z > 3 or z < 4) #true
+
+# Identity Operators
+
+x = ["apple", "banana"]
+y = ["apple", "banana"]
+
+z = x
+
+#Identity Operators
+print(x is not z) #false
+print(x is not y) #true
+print(x != y) #false
+
+#Membership Operators
+print("banana" in x) #true
+print("oranges" in x) #false
+
+
