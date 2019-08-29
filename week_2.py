@@ -100,3 +100,25 @@ print(myOrder.format(quantity, itemno, price))
 
 myOrder_2 = " I want to pay {2} dollars for {0} pieses of item {1}."
 print(myOrder_2.format(quantity, itemno, price))
+
+
+# Tenth Day
+
+"""Arithmetic operators are used with numeric values to perform common
+ mathematical operations."""
+
+x = 5
+y = 3
+print(x * y)
+
+
+# x = x / 3
+x /= 3
+# x = x + 3
+x += 3
+print(x)
+
+# Comparison Operators output true or false
+
+print(x < y) # false
+print(x != y) #true
