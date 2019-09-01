@@ -1,4 +1,8 @@
-# Day 13
+
+
+
+
+#Day 13
 
 s = []
 print(s) # empty List
