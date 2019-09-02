@@ -36,5 +36,29 @@ print(thislist)
 del thislist[1]
 print(thislist)
 
+
 #Day 14
 
+list_1 = ['A', 'B', 'C', 'D', 'E']
+print(list_1[1:3]) #start print from index number 1 and end befor index number 3
+
+
+#Check if Item Exists
+thislist = ["apple", "banana", "cherry"]
+if "apple" in thislist:
+    print("Yes, 'apple' is in the fruits list")
+
+#Repeat Item in List
+program_lang = ["Pyrhon"]*4
+print(program_lang)
+
+#+ Operator in List
+list_2 = ['Ahmad', 'Khalid', 'Omar']
+list_3 = ['Sara', 'Hind', 'Batool']
+list_4 = list_2 + list_3
+print(list_4)
+
+num_1 = [1,2,3,4,5]
+num_2 = [1.5, 2.5, 3.5, 4.5, 5.5]
+num_3 = num_1 + num_2
+print(num_3)
