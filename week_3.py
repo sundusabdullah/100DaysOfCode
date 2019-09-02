@@ -1,7 +1,4 @@
 
-
-
-
 #Day 13
 
 s = []
@@ -38,3 +35,6 @@ print(thislist)
 # delete item in list
 del thislist[1]
 print(thislist)
+
+#Day 14
+
