@@ -76,20 +76,20 @@ thislist.append('orange')
 print(thislist)
 
 # To remove specified items in list remove() method.
-#thislist.remove('banana')
-#print(thislist)
+thislist.remove('banana')
+print(thislist)
 
 # To remove specified index in list pop() method.
-#thislist.pop(1)
-#print(thislist)
+thislist.pop(1)
+print(thislist)
 
 # To remove last item in list.
-#thislist.pop()
-#print(thislist)
+thislist.pop()
+print(thislist)
 
 #To empty list use clear()
-#thislist.clear()
-#print(thislist)
+thislist.clear()
+print(thislist)
 
 # To copy list copy() method.
 mylist = thislist.copy()
