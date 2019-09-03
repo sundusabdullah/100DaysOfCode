@@ -62,3 +62,39 @@ num_1 = [1,2,3,4,5]
 num_2 = [1.5, 2.5, 3.5, 4.5, 5.5]
 num_3 = num_1 + num_2
 print(num_3)
+
+
+#Day 15
+
+# To count the items in list use len() method.
+thislist = ["apple", "banana", "cherry"]
+print(len(thislist))
+
+# To add new item in list use append() method.
+thislist.append('orange')
+
+print(thislist)
+
+# To remove specified items in list remove() method.
+#thislist.remove('banana')
+#print(thislist)
+
+# To remove specified index in list pop() method.
+#thislist.pop(1)
+#print(thislist)
+
+# To remove last item in list.
+#thislist.pop()
+#print(thislist)
+
+#To empty list use clear()
+#thislist.clear()
+#print(thislist)
+
+# To copy list copy() method.
+mylist = thislist.copy()
+print("Copy list:", mylist)
+
+# use list() function to make a new list.
+language = list(("python", "php", "js"))
+print(language)
