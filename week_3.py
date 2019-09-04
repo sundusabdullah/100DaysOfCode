@@ -63,7 +63,6 @@ num_2 = [1.5, 2.5, 3.5, 4.5, 5.5]
 num_3 = num_1 + num_2
 print(num_3)
 
-
 #Day 15
 
 # To count the items in list use len() method.
@@ -98,3 +97,34 @@ print("Copy list:", mylist)
 # use list() function to make a new list.
 language = list(("python", "php", "js"))
 print(language)
+
+# Day 16
+# Tuple
+
+thistuple = ("apple", "banana", "cherry")
+print(thistuple)
+
+thistuple_2 = ()
+# will print empty tuple
+print(thistuple_2)
+
+
+# When definition one element must put a comma
+thistuple_3 = (3,)
+print(thistuple_3)
+
+thistuple_4 = ("Sundus", 1.1, 4, "Python")
+print(thistuple_4)
+# Access Tuple Items
+print(thistuple_4[0])
+# Loop Through a Tuple
+for i in thistuple_4:
+    print(i)
+
+# Add new Items
+thistuple_4[4] = "Abdullah"
+# will give error because the tuple unchangeable
+print(thistuple_4)
+
+# print items from index 0 to index 2
+print(thistuple_4[0:3])
