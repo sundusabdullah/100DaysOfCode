@@ -163,3 +163,7 @@ print(thistuple_3)
 thislist = [3, 4, 5, 6, "A", "B"]
 thistuple_4 = tuple(thislist)
 print(thistuple_4)
+
+
+# Day 18 - 19
+
