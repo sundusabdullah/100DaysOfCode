@@ -167,3 +167,27 @@ print(thistuple_4)
 
 # Day 18 - 19
 
+program_lang = ["python", "php", "java", "js"]
+# Task_1
+# Reverse the order of list
+program_lang.reverse()
+print(program_lang)
+#number of elements with the specified value
+x = program_lang.count("python")
+print(x)
+
+# Sort the list
+program_lang.sort()
+print(program_lang)
+
+# Remove all the elements in list
+program_lang.clear()
+print(program_lang)
+
+############################
+
+# Task_2
+
+tuple = ("java", "python", "swift")
+if "python" in tuple:
+    print("'python' in tuple")
