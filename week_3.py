@@ -128,3 +128,38 @@ print(thistuple_4)
 
 # print items from index 0 to index 2
 print(thistuple_4[0:3])
+
+
+# Day 17
+
+#Check if Item Exists
+
+thistuple = ("apple", "banana", "cherry")
+if "apple" in thistuple:
+    print("Yes, 'apple' is in the fruits tuple ")
+
+# Repeat Item
+thistuple_2 = ("python",) * 3
+print(thistuple_2)
+
+# + Operator
+thistuple1 = (1, 2, 3, 4)
+thistuple2 = (5, 6)
+thistuple3 = thistuple1 + thistuple2
+print(thistuple3)
+
+x = (3, 4, 5, 6)
+x = x + (1, 2, 3)
+print(x)
+
+# Tuple Length
+print(len(thistuple))
+
+# tuple() Constructor
+
+thistuple_3 = tuple(("PHP", "Java", "Python"))
+print(thistuple_3)
+
+thislist = [3, 4, 5, 6, "A", "B"]
+thistuple_4 = tuple(thislist)
+print(thistuple_4)
