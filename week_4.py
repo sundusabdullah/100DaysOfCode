@@ -27,9 +27,6 @@ print(thisset_2)
 thisset_2.update(["orange", "mango", "grapes"])
 print(thisset_2)
 
-
-
-
 # Day_21
 
 # Length of a Set
@@ -87,3 +84,6 @@ for x in thisdict_2.values():
 for x, y in thisdict_2.items():
     # print all keys and values
     print(x, y)
+
+
+# Day_23
