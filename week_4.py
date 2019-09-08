@@ -47,3 +47,43 @@ print(thisset_2)
 
 thisset_3 = set(("apple", "banana", "cherry"))
 print(thisset_3)
+
+# Day_22
+thisdict_1 = {}
+# Empty dictionary
+print(thisdict)
+
+thisdict_2 = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+print(thisdict_2)
+
+# Accessing Items
+
+x = thisdict_2["model"]
+# OR
+x = thisdict_2.get("model")
+print(x)
+
+# Change Values
+thisdict_2["year"] = 2018
+print(thisdict_2)
+
+# Loop
+for x in thisdict_2:
+    # print all keys
+    print(x)
+
+for x in thisdict_2:
+    #print all values
+    print(thisdict_2[x])
+
+for x in thisdict_2.values():
+    # print all values
+    print(x)
+
+for x, y in thisdict_2.items():
+    # print all keys and values
+    print(x, y)
