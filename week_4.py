@@ -87,3 +87,37 @@ for x, y in thisdict_2.items():
 
 
 # Day_23
+
+# Check if Key Exists
+
+thisdict_2 = {
+     "brand": "Ford",
+     "model": "Mustang",
+     "year": 1964
+}
+
+if "model" in thisdict_2:
+    print("yes, 'model' is one of the keys in the thisdict_2 dictionary ")
+
+# Dictionary length
+print(len(thisdict_2))
+
+# Adding Items
+thisdict_2["color"] = "red"
+print(thisdict_2)
+
+# Removing Items pop() method remove item with specified key.
+thisdict_2.pop("model")
+print(thisdict_2)
+
+# popitem() method remove the last inserted item
+thisdict_2.popitem()
+print(thisdict_2)
+
+# del keyword removes the item with the specified key name
+del thisdict_2["model"]
+print(thisdict_2)
+
+# To empty the dictionary use clear() method
+thisdict_2.clear()
+print(thisdict_2)
