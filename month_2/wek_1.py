@@ -102,3 +102,39 @@ while i < 6:
     i += 1
 else:
     print("i is no longer less than 6")
+
+# Day_29
+
+# For Loops
+fruite = ["apple", "banana", "cherry"]
+for x in fruite:
+    print(x)
+
+for y in "banana":
+    print(y)
+
+# Break statement
+fruite = ["apple", "banana", "cherry"]
+for x in fruite:
+    print(x)
+    if x == "banana":
+        break
+
+fruite = ["apple", "banana", "cherry"]
+for x in fruite:
+    if x == "banana":
+        break
+    print(x)
+
+
+# Continue statement
+fruite = ["apple", "banana", "cherry"]
+for x in fruite:
+    if x == "banana":
+        continue
+    print(x)
+
+
+# Day_30
+
+
