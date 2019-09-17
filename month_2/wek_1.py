@@ -126,7 +126,6 @@ for x in fruite:
         break
     print(x)
 
-
 # Continue statement
 fruite = ["apple", "banana", "cherry"]
 for x in fruite:
@@ -136,5 +135,32 @@ for x in fruite:
 
 
 # Day_30
+# range() Function
 
+for x in range(6):
+    print(x)
 
+# it is possible to specify the starting value
+
+for x in range(2, 6):
+    print(x)
+
+# it is possible to specify the increment value
+# 2 is starting value, 30 end value, 2 increment value,
+for x in range(2, 30, 3):
+    print(x)
+
+# Else in for loop
+
+for x in range(6):
+    print(x)
+else:
+    print("Finally finished!")
+
+# Nested loop
+fruite = ["apple", "banana", "cherry"]
+adj = ["red", "big", "tasty"]
+
+for x in adj:
+    for y in fruite:
+        print(x, y)
