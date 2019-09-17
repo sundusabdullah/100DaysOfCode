@@ -164,3 +164,24 @@ adj = ["red", "big", "tasty"]
 for x in adj:
     for y in fruite:
         print(x, y)
+
+# Day_31
+
+# Creating a Function
+def my_function():
+    print("Hello from a function")
+# calling a function
+my_function()
+
+# Parameters
+def my_function(fname):
+    print(fname + "Refsanes")
+
+my_function("Sundus ")
+
+# Default Parameter Value
+def my_function(country = "Norway"):
+    print( "I am from " + country)
+
+my_function("Saudi Arabia ")
+my_function()
