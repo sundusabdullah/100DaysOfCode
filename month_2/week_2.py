@@ -58,3 +58,53 @@ print(x(5, 6))
 
 x = lambda a, b, c: a + b + c
 print(x(5, 6, 2))
+
+# Day_36
+
+def myfunc(n):
+    return lambda a: a*n
+
+mydoubler = myfunc(2)
+print(mydoubler(11))
+
+
+def myfunc(n):
+    return lambda a: a*n
+
+mydoubler = myfunc(3)
+print(mydoubler(11))
+
+
+def myfunc(n):
+    return lambda a: a*n
+
+mydoubler = myfunc(2)
+mytripler = myfunc(3)
+
+print(mydoubler(11))
+print(mytripler(11))
+
+
+# Day_37
+# Arrays
+
+cars = ["Ford", "Volvo", "BMW"]
+print(cars)
+
+#  Access the Elements of an Array
+
+cars = ["Ford", "Volvo", "BMW"]
+x = cars[0]
+print(x)
+
+# Modify the value
+
+cars = ["Ford", "Volvo", "BMW"]
+cars[0] = "Toyota"
+print(cars)
+
+# Length of an Array
+
+cars = ["Ford", "Volvo", "BMW"]
+x = len(cars)
+print(x)
