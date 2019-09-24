@@ -4,7 +4,7 @@
 
 def my_function(food):
     for x in food:
-        print (x)
+        print(x)
 
 fruits = ["Apple", "Banana", "Cherry"]
 my_function(fruits)
@@ -44,3 +44,17 @@ def tri_recursion(k):
 print ("\n\n Recursion Example Result")
 tri_recursion(6)
 
+# Day_35
+
+#lambda function()
+x = lambda a: a + 10
+print(x(5))
+
+# lambda function that multiplies argument
+x = lambda a, b: a*b
+print(x(5, 6))
+
+# lambda function that sums argument
+
+x = lambda a, b, c: a + b + c
+print(x(5, 6, 2))
