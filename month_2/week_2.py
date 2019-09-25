@@ -108,3 +108,22 @@ print(cars)
 cars = ["Ford", "Volvo", "BMW"]
 x = len(cars)
 print(x)
+
+# Day_38
+
+# Looping Array Elements
+cars = ["Ford", "Volvo", "BMW"]
+for x in cars:
+    print(x)
+
+# Adding Array Elements
+cars.append("Honda")
+print(cars)
+
+#Removing Array Elements, pop() method
+cars.pop(1)
+print(cars)
+
+#remove() method
+cars.remove("Volvo")
+print(cars)
