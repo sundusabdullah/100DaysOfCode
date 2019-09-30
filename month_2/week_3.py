@@ -80,3 +80,53 @@ class Person:
 p1 = Person("sundus", 26)
 del p1
 print(p1) # NameError: name 'p1' is not defined
+
+
+# Day_43
+# Python Inheritance
+# Create a Parent Class
+
+class Person:
+    def __init__(self, fname, lname):
+        self.firstname = fname
+        self.lastname = lname
+    def printname(self):
+       print(self.firstname, self.lastname)
+x = Person("sundus", "Abdullah")
+x.printname()
+
+
+# Create a Child Class
+
+class Person:
+    def __init__(self, fname, lname):
+        self.firstname = fname
+        self.lastname = lname
+    def printname(self):
+       print(self.firstname, self.lastname)
+
+# Child Class
+class Student(Person):
+    pass
+
+x = Student("sundus", "Abdullah")
+x.printname()
+
+# Add the __init__() function
+
+class Person:
+    def __init__(self, fname, lname):
+        self.firstname = fname
+        self.lastname = lname
+    def printname(self):
+       print(self.firstname, self.lastname)
+
+class Student(Person):
+    def __init__(self, fname, lname):
+        Person.__init__(self, fname, lname)
+
+
+x = Student("sundus", "Abdullah")
+x.printname()
+
+# Day_44
