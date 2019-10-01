@@ -200,3 +200,81 @@ class Student(Person):
 
 x = Student("sundus", "Abdullah", 2018)
 x.welcome()
+
+
+# Day_45
+
+# Iterator
+
+mytuple = ("Apple", "Banana", "Cherry")
+
+myit = iter(mytuple)
+print(next(myit))
+print(next(myit))
+print(next(myit))
+
+mtstr = "Banana"
+myit = iter(mtstr)
+print(next(myit))
+print(next(myit))
+print(next(myit))
+print(next(myit))
+print(next(myit))
+print(next(myit))
+
+
+
+# Looping Through an Iterator
+
+for x in mytuple:
+    print(x)
+
+for x in mtstr:
+    print(x)
+
+# Create an Iterator
+
+class MyNumber:
+    def __iter__(self):
+        self.a = 1
+        return self
+    def __next__(self):
+        x = self.a
+        self.a += 1
+        return x
+
+myclass = MyNumber()
+myiter = iter(myclass)
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+
+
+# StopIteration
+
+
+class MyNumber:
+    def __iter__(self):
+        self.a = 1
+        return self
+    def __next__(self):
+        if self.a <= 20:
+            x = self.a
+            self.a += 1
+            return x
+
+        else:
+            raise StopIteration
+
+myclass = MyNumber()
+myiter = iter(myclass)
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+
+for x in myiter:
+    print(x)
