@@ -278,3 +278,27 @@ print(next(myiter))
 
 for x in myiter:
     print(x)
+
+# Day_46_47
+
+
+class library:
+    def __init__(self, book, shelf):
+        self.book = book
+        self.shelf = shelf
+
+
+    def printinfo(self):
+        print( self.book, self.shelf)
+
+
+class science_section(library):
+    def __init__(self, book, shelf, name ):
+        super().__init__(book, shelf)
+        self.name = name
+
+    def printinfo(self):
+        print("Number of books is", self.book, ",and number of shelf", self.shelf, "one of the books is",self.name)
+
+y = science_section(20, 4, "Physics book") #object
+y.printinfo()
