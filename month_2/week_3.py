@@ -287,11 +287,11 @@ class library:
         self.book = book
         self.shelf = shelf
 
-
     def printinfo(self):
         print( self.book, self.shelf)
 
-
+x = library(300, 45)
+x.printinfo()
 class science_section(library):
     def __init__(self, book, shelf, name ):
         super().__init__(book, shelf)
