@@ -71,3 +71,28 @@ a = mymodule.person1["age"]
 print(a)
 
 
+# Day_51
+
+# Naming Module:You can name the module file whatever you like, but it must have the file extension .py
+# Re-naming Module:
+
+import mymodule as mx
+
+a = mx.person1["age"]
+print(a)
+
+# Built-in Modules
+
+import platform
+x = platform.system()
+print(x)
+print(platform.python_version())
+
+#  dir() function.
+x = dir(platform)
+print(x)
+
+# Import From Module
+
+from mymodule import person1
+print(person1["age"])
