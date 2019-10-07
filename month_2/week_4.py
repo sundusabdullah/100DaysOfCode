@@ -117,3 +117,31 @@ print(x)
 x = datetime.datetime(2020, 5, 17)
 print(x.strftime("%B"))
 
+
+# Day_53_54
+
+# Task_1
+
+import mymodule
+
+mymodule.sum(1, 8)
+mymodule.sub(4, 2)
+mymodule.multi(6, 6)
+mymodule.divid(8, 2)
+
+# Task_2
+import datetime
+
+x = datetime.datetime.now()
+print(x.strftime("%c"))
+
+# Task_3
+
+from datetime import datetime, timedelta
+# Use timedelta() calculating differences in dates
+yesterday = datetime.now() - timedelta(days=1)
+tomorrow = datetime.now() + timedelta(days=1)
+
+print(("Yesterday: ") + yesterday.strftime('%Y-%m-%d'))
+print(("Tomorrow: ") + tomorrow.strftime('%Y-%m-%d'))
+
