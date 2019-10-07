@@ -1,7 +1,6 @@
 # Day_48
 
 #  Local Scope
-
 def myFunc():
     x = 300
     print(x)
@@ -96,3 +95,25 @@ print(x)
 
 from mymodule import person1
 print(person1["age"])
+
+# Day_52
+
+# Dates in python
+
+import datetime
+x = datetime.datetime.now()
+print(x)
+
+#Date Output
+x = datetime.datetime.now()
+print(x.year)
+print(x.strftime("%A"))
+
+# Create data object
+x = datetime.datetime(2020, 5, 17)
+print(x)
+
+# strftime() Method
+x = datetime.datetime(2020, 5, 17)
+print(x.strftime("%B"))
+
