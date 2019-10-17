@@ -107,3 +107,33 @@ print("The first white-space character is located in position:", y.start())
 
 z = re.split("\s", txt)
 print(z)
+
+# Day_59
+
+# sub() Function
+
+import re
+
+str = "The rain in Spain"
+# Replace every white-space character with the number 9
+x = re.sub("\s", "9", str)
+print(x)
+
+
+# Replace the first 2white-space with the number 9
+x = re.sub("\s", "9", str, 2)
+print(x)
+
+# Match Object
+
+x = re.search("ai",  str, 2)
+print(x)
+
+# Print the position (start- and end-position) of the first match occurrence
+
+x = re.search(r"\bS\w+", str)
+print(x.span())
+
+# Print the part of the string where there was a match.
+x = re.search(r"\bS\w+", str)
+print(x.group())
