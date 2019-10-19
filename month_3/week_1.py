@@ -137,3 +137,36 @@ print(x.span())
 # Print the part of the string where there was a match.
 x = re.search(r"\bS\w+", str)
 print(x.group())
+
+
+Day_60_61
+# Task_1
+import json
+week_days = ("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")
+x = json.dumps(week_days)
+print(x)
+
+
+# Task_2
+import re
+txt = "data is the new oil"
+x = re.findall("data", txt)
+print(x)
+
+
+# Task_3
+
+import re
+
+Python = "first released in 1991,Designed by Guido van Rossum, can be used in Develop" \
+         " Application and Web Applications"
+
+x = re.findall("App", Python)
+if(x):
+    print("found it")
+else:
+    ("Not found it")
+
+
+y = re.search("was", Python)
+print(y)
