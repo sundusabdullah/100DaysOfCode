@@ -65,3 +65,24 @@ except:
 finally:
     print("The 'try except' is finished")
 
+# Day_65
+
+# String format()
+
+prince = 49
+txt = "The price is {} dollars"
+print(txt.format(prince))
+
+# Format the price to be displayed as a number with two decimals.
+
+prince = 49
+txt = "The price is {:.2f} dollars"
+print(txt.format(prince))
+
+# Multiple Values
+
+quantity = 3
+itemno = 567
+price = 49
+myorder = "I want {} pieces of item number {} for {:.2f} dollars."
+print(myorder.format(quantity, itemno, prince))
