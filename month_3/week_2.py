@@ -101,3 +101,28 @@ print(myorder.format(quantity, itemno, price))
 
 myorder = "I have a {carname}, it is a {model}."
 print(myorder.format(carname="Ford", model="Mustang"))
+
+
+# Day_67_68
+
+# task_1
+x = input("Enter the first letter of your first name \n")
+y = input("Enter the first letter of your last name \n")
+
+print("The first letter of your first name is", x,
+      "\n The first letter of your last name is", y)
+
+# task_2
+x = 53.44
+txt = "Dear Ahmad Ali, Your current balance is {:.2f}"
+print(txt.format(x),"$")
+
+# task_3
+
+num = int(input("Enter the number of array"))
+y = []
+for i in range(num):
+    z = int(input("Enter number for array"))
+    y.append(z)
+
+print(y)
