@@ -151,7 +151,7 @@ myresult = mycursor.fetchall()
 for x in myresult:
     print(x)
 
-Day_72
+# Day_72
 
 Sort the Result
 sql = "SELECT * FROM customers ORDER BY name"
@@ -198,3 +198,79 @@ mycursor.execute(sql)
 myresult = mycursor.fetchall()
 for x in myresult:
     print(x)
+
+
+# day_74_75
+
+# Task_1
+txt = open("hello.txt", "rt")
+print(txt.readline())
+print(txt.readline())
+print(txt.readline())
+
+txt = open("hello.txt", "a")
+txt.write("The best way we learn anything is by practice and exercise questions")
+
+txt = open("hello.txt", "rt")
+print(txt.readline())
+print(txt.readline())
+print(txt.readline())
+print(txt.readline())
+# Task_2
+
+mydb = mysql.connector.connect(
+
+    host="localhost",
+    user="root",
+    passwd="12345678",
+    db="MyEmployee"
+)
+
+# Creating a Database
+mycursor = mydb.cursor()
+mycursor.execute("CREATE DATABASE MyEmployee")
+
+mycursor.execute("CREATE TABLE MyEmployee (id INT AUTO_INCREMENT PRIMARY KEY, fname VARCHAR(255), lname VARCHAR(255),"
+                 " Age INT(25), Gender VARCHAR(255), salary INT(25))")
+
+
+
+sql = "INSERT INTO MyEmployee (fname, lname, Age, Gender, salary) " \
+      "VALUES (%s, %s, %s, %s, %s )"
+val = [
+  ('Ahmad', 'Ali', 30, 'Male', 10000),
+  ('Khalid', 'Muhammad', 34, 'Male', 7000),
+  ('Norah', 'Saleh', 29, 'Female', 7000)
+]
+
+mycursor.executemany(sql, val)
+mydb.commit()
+print(mycursor.rowcount, "was inserted.")
+
+mycursor.execute("SELECT * FROM MyEmployee")
+
+myresult = mycursor.fetchall()
+for x in myresult:
+  print(x)
+mycursor.execute("SELECT fname, Gender, salary FROM MyEmployee ")
+myresult = mycursor.fetchall()
+for x in myresult:
+  print(x)
+mycursor.execute("SELECT * FROM MyEmployee order by fname DESC")
+myresult = mycursor.fetchall()
+for x in myresult:
+  print(x)
+
+mycursor.execute("delete FROM MyEmployee where Age = 34")
+mycursor.execute("SELECT * FROM MyEmployee")
+myresult = mycursor.fetchall()
+for x in myresult:
+  print(x)
+
+
+# Task_3
+with open("hello.txt", "r") as txt:
+    array = []
+    for line in txt:
+        array.append(line)
+print(array)
